@@ -7,6 +7,14 @@
     text-align: center;
 }
 
+.cent {
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-self: center;
+}
+
 h1 {
     align-text: center;
 }
