@@ -1,0 +1,155 @@
+<!-- Add this section after the existing donation-section and before the payment-section -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Support Our Minecraft Server</title>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #3b8526;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+        }
+        .hero {
+            background-color: #3b8526;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .donation-section {
+            padding: 4rem 0;
+            background-color: white;
+        }
+        .donation-options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .donation-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 2rem;
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #3b8526;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #2d6a1e;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+        .payment-section {
+            text-align: center;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+        .minecraft-theme {
+            background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/06/Download-minecraft-wallpaper-hd.jpg');
+            background-size: cover;
+            border: 4px solid #5c4033;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Minecraft Server Donations</h2>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Support Our Minecraft Community</h1>
+            <p>Your donations help us maintain server performance, add new features, and create a better gaming experience for everyone.</p>
+        </div>
+    </section>
+
+    <section class="donation-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Why Donate?</h2>
+            <div class="donation-options">
+                <div class="donation-card">
+                    <h3>Server Maintenance</h3>
+                    <p>Help us cover hosting costs and keep the server running smoothly with minimal lag.</p>
+                </div>
+                <div class="donation-card">
+                    <h3>New Features</h3>
+                    <p>Enable us to develop custom plugins and add exciting new content to enhance gameplay.</p>
+                </div>
+                <div class="donation-card">
+                    <h3>Community Events</h3>
+                    <p>Support our regular community events, competitions, and special in-game activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-section minecraft-theme">
+        <h2>Make a Donation</h2>
+        <p>Choose a donation option below. Thank you for your support!</p>
+        <div style="margin-top: 2rem;">
+            <stripe-buy-button
+                buy-button-id="buy_btn_1R8pDFCKH17mJHqcVIAsTdJz"
+                publishable-key="pk_live_51QxAyuCKH17mJHqcvROAgkUB2aB86QnygBe4khl6SoVQGcuLdS2895zds4khlBvW2UNPlKzbwrtfFawyRtybiKz900WOajSfdo"
+            >
+            </stripe-buy-button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Minecraft Server. All rights reserved.</p>
+            <p>For questions about donations, please contact our team at support@example.com</p>
+        </div>
+    </footer>
+</body>
+</html></div>
