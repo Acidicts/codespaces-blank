@@ -6,12 +6,14 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 <body>
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected automatically, follow this <a id="link" href="https://google.com">link</a>.</p>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Check if URL contains ?new=y parameter
             const urlParams = new URLSearchParams(window.location.search);
+            document.getElementById("link").href = window.location.href; 
 
-            switch (urlParams.get('redirect')) {
+            switch (urlParams.get("link")) {
                 case "sign-up":
                     window.location.href = "https://fusionlabs.fillout.com/cathedral-got-talent";
                     break;
@@ -19,8 +21,8 @@
                     window.location.href = "https://google.com";
                     break;
             }
-                
         });
+
     </script>    
 </body>
 </html>
